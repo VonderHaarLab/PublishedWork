@@ -1,7 +1,7 @@
 # R Code to accompany our publication in *Behavioral Neuroscience* 
 <sub>Frankot, M. A., O'Hearn, C. M., Blancke, A. M., Rodriguez, B., Pechacek, K. M., Gandhi, J., Hu, G., Martens, K. M., & Vonder Haar, C. (2022). Acute gut microbiome changes after traumatic brain injury are associated with chronic deficits in decision-making and impulsivity in male rats. Behavioral Neuroscience. Advance online publication. https://doi.org/10.1037/bne0000532 </sub>
 
-## This code can be used to analyze and visualize alpha diversity, beta diversity, and taxa abundance for 16s sequencing of the gut microbiome. These data were collected in the Vonder Haar lab, written by [Michelle Frankot](github.com/mfrankz). The full publication can be found [here](https://psycnet.apa.org/record/2022-85473-001).
+## This code can be used to analyze and visualize alpha diversity, beta diversity, and taxa abundance for 16s sequencing of the gut microbiome. These data were collected in the Vonder Haar lab, written by [Michelle Frankot(https://github.com/mfrankz). The full publication can be found [here](https://psycnet.apa.org/record/2022-85473-001).
 
 # In brief, the goal of the project was to determine the effects of traumatic brain injury (TBI) and a high-fat diet (HFD) on the gut microbiome across several collection timepoints. We found that TBI shifted the gut microbiome, and some acute changes were associated with behavioral outcomes.
 
