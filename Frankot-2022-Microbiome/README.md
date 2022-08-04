@@ -1,14 +1,16 @@
 # R Code to accompany our publication in *Behavioral Neuroscience* 
 <sub>Frankot, M. A., O'Hearn, C. M., Blancke, A. M., Rodriguez, B., Pechacek, K. M., Gandhi, J., Hu, G., Martens, K. M., & Vonder Haar, C. (2022). Acute gut microbiome changes after traumatic brain injury are associated with chronic deficits in decision-making and impulsivity in male rats. Behavioral Neuroscience. Advance online publication. https://doi.org/10.1037/bne0000532 </sub>
 
-## This code can be used to analyze and visualize alpha diversity, beta diversity, and taxa abundance for 16s sequencing of the gut microbiome. These data were collected in the [Vonder Haar lab](https://github.com/vonderhaarlab), and the full publication can be found [here](https://psycnet.apa.org/record/2022-85473-001).
+## This code can be used to analyze and visualize alpha diversity, beta diversity, and taxa abundance for 16s sequencing of the gut microbiome. These data were collected in the Vonder Haar lab, written by [Michelle Frankot](github.com/mfrankz). The full publication can be found [here](https://psycnet.apa.org/record/2022-85473-001).
 
 # In brief, the goal of the project was to determine the effects of traumatic brain injury (TBI) and a high-fat diet (HFD) on the gut microbiome across several collection timepoints. We found that TBI shifted the gut microbiome, and some acute changes were associated with behavioral outcomes.
 
-The code contained in the readme can be downloaded [here](https://github.com/mfrankz/BNE_Publication/blob/main/primary_code.R).
-Additional code, including plotting/analysis of the class/order level, plotting of PICRUSt data, and a model comparison approach where alpha and beta diversity were used to predict behavioral outcomes can be found [here](https://github.com/mfrankz/BNE_Publication/blob/main/additional_code.R).
 
-1. Begin by loading libraries and reading in the data, which can be found [here](https://github.com/mfrankz/BNE_Publication/blob/main/ps.rds).
+
+The code contained in the readme can be downloaded [here](https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/primary_code.R).
+Additional code, including plotting/analysis of the class/order level, plotting of PICRUSt data, and a model comparison approach where alpha and beta diversity were used to predict behavioral outcomes can be found [here](https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/additional_code.R).
+
+1. Begin by loading libraries and reading in the data, which can be found [here](https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/ps.rds).
 ```
 #set up
 library(phyloseq)
@@ -67,7 +69,7 @@ ggplot(data=alpha_plot, aes(x=Time, y= alpha_diversity, color=Group, group=Group
   my_theme
 ggsave("Alpha.png", width = 28, height = 20, units = "cm")
 ```
-<img src="https://github.com/mfrankz/BNE_Publication/blob/main/Alpha.png" width="600">
+<img src="https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/Alpha.png" width="600">
 
 ```
 #analyze alpha diversity using linear mixed-effects regression
@@ -120,7 +122,7 @@ plot_ordination(ps, ord.pcoa, color="Group", shape="Group")+
   my_theme
 ggsave("Beta.png", width = 28, height = 20, units = "cm")
 ```
-<img src="https://github.com/mfrankz/BNE_Publication/blob/main/Beta.png" width="600">
+<img src="https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/Beta.png" width="600">
 
 ```
 #Analyze beta diversity using PERMANOVA
@@ -180,7 +182,7 @@ ggplot(phy_TBI, aes(x = Time, y = Abundance, fill = Phylum)) +
   theme(axis.text.x=element_text(size=14))
 ggsave("TBI_phylum.png", width = 34, height = 20, units = "cm")
 ```
-<img src="https://github.com/mfrankz/BNE_Publication/blob/main/TBI_phylum.png" width="600">
+<img src="https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/TBI_phylum.png" width="600">
 
 ```
 #visualize sham subjects
@@ -195,7 +197,7 @@ ggplot(phy_SHAM, aes(x = Time, y = Abundance, fill = Phylum)) +
   theme(axis.text.x=element_text(size=14))
 ggsave("SHAM_phylum.png", width = 34, height = 20, units = "cm")
 ```
-<img src="https://github.com/mfrankz/BNE_Publication/blob/main/SHAM_phylum.png" width="600">
+<img src="https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/SHAM_phylum.png" width="600">
 
 ```
 #plot phyla at the aggregate level
@@ -235,5 +237,5 @@ ggplot(data=phy_avg,aes(Time, Abundance, color=Group, group=Group, shape=Group))
   theme(axis.text.x = element_text(size=20,angle = -40,hjust=0.5, vjust=0))
 ggsave("phylum.png", width = 34, height = 20, units = "cm")
 ```
-<img src="https://github.com/mfrankz/BNE_Publication/blob/main/phylum.png" width="600">
+<img src="https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/phylum.png" width="600">
 
