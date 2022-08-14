@@ -7,10 +7,10 @@
 
 
 
-The code contained in the readme can be downloaded [here](https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/primary_code.R).
-Additional code, including plotting/analysis of the class/order level, plotting of PICRUSt data, and a model comparison approach where alpha and beta diversity were used to predict behavioral outcomes can be found [here](https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/additional_code.R).
+The code contained in the readme can be downloaded [here](primary_code.R).
+Additional code, including plotting/analysis of the class/order level, plotting of PICRUSt data, and a model comparison approach where alpha and beta diversity were used to predict behavioral outcomes can be found [here](additional_code.R).
 
-1. Begin by loading libraries and reading in the data, which can be found [here](https://github.com/VonderHaarLab/PublishedWork/blob/main/Frankot-2022-Microbiome/ps.rds).
+1. Begin by loading libraries and reading in the data, which can be found [here](ps.rds).
 ```
 #set up
 library(phyloseq)
