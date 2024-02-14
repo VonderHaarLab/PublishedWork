@@ -1,5 +1,5 @@
 # R code to accompany an upcoming publication 
-  Koloski, M.F., O’Hearn, C.M., Frankot, M., Giesler, L.P., Ramanathan, D.S. Vonder Haar, C. Cognitive rehabilitation can improve brain injury-induced deficits in behavioral flexibility and impulsivity linked to impaired reward-feedback beta oscillations.
+Koloski, M.F., O’Hearn, C.M., Frankot, M., Giesler, L.P., Ramanathan, D.S. Vonder Haar, C. Behavioral interventions can improve brain injury-induced deficits in behavioral flexibility and impulsivity linked to impaired reward-feedback beta oscillations.
 
 ## The goal of this project was to establish and evaluate an animal model for assessing cognitive rehabilitation after TBI
 Animal models are needed to better understand relevant biological variables that influence response to therapy or behavioral treatments.
